@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+  background: #eef1f4;
+  color: #1a1a1a;
+}
+
+.board {
+  width: 100%;
+  max-width: 480px;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+}
+
+.subtitle {
+  margin: 0 0 1.5rem;
+  color: #555;
+}
+
+.task-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 0.65rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.task-form button {
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.task-form button:hover {
+  background: #eee;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.task-item button {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #f7f7f7;
+}
+
+.task-item button:hover {
+  background: #e8e8e8;
+}
+
+.task-item .remove-btn {
+  border-color: #c44;
+  color: #a22;
+}
